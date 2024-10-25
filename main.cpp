@@ -36,18 +36,18 @@ class Food {
     return this->position;
   }
 
-  void setFoodPos(Vector2 newFoodPos) {
-    this->position = newFoodPos;
+  void setFoodPos(deque<Vector2> snakeBody) {
+    this->position = this->generateRandomPosition(snakeBody);
   }
 
   Vector2 generateRandomPosition(const deque<Vector2>& snakeBody) {
-    Vector2 newPos;
+    Vector2 newRandomPosition;
 
     do {
-      newPos = this->generateRandomCell();
-    } while (this->elementInDeque(snakeBody, newPos));
+      newRandomPosition = this->generateRandomCell();
+    } while (this->elementInDeque(snakeBody, newRandomPosition));
 
-    return newPos;
+    return newRandomPosition;
   }
 
   ~Food() {
@@ -59,10 +59,10 @@ class Food {
   Texture2D texture;
 
   Vector2 generateRandomCell() {
-    float x = GetRandomValue(0, CELL_SIZE - 1);
-    float y = GetRandomValue(0, CELL_SIZE - 1);
+    float randomX = GetRandomValue(0, CELL_COUNT - 1);
+    float randomY = GetRandomValue(0, CELL_COUNT - 1);
 
-    return Vector2{x, y};
+    return Vector2{randomX, randomY};
   }
 
   bool elementInDeque(const deque<Vector2>& body, Vector2 element) {
@@ -144,7 +144,7 @@ class Game {
     if (Vector2Equals(headPos, foodPos)) {
       cout << "Eating Food" << '\n';
 
-      this->food.setFoodPos(this->food.generateRandomPosition(this->snake.body));
+      this->food.setFoodPos(this->snake.body);
     }
   }
 };
