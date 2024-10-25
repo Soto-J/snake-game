@@ -1,0 +1,8 @@
+C:/Users/sotoj/Documents/Cpp/projects/snake2/build/CMakeFiles/Experimental.dir
+C:/Users/sotoj/Documents/Cpp/projects/snake2/build/CMakeFiles/Nightly.dir
+C:/Users/sotoj/Documents/Cpp/projects/snake2/build/CMakeFiles/Continuous.dir
+C:/Users/sotoj/Documents/Cpp/projects/snake2/build/CMakeFiles/NightlyMemoryCheck.dir
+C:/Users/sotoj/Documents/Cpp/projects/snake2/build/CMakeFiles/snake.dir
+C:/Users/sotoj/Documents/Cpp/projects/snake2/build/CMakeFiles/RUN_TESTS.dir
+C:/Users/sotoj/Documents/Cpp/projects/snake2/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/sotoj/Documents/Cpp/projects/snake2/build/CMakeFiles/ZERO_CHECK.dir

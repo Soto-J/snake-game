@@ -1,0 +1,10 @@
+^C:\USERS\SOTOJ\DOCUMENTS\CPP\PROJECTS\SNAKE2\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/sotoj/Documents/Cpp/projects/snake2 -BC:/Users/sotoj/Documents/Cpp/projects/snake2/build --check-stamp-file C:/Users/sotoj/Documents/Cpp/projects/snake2/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

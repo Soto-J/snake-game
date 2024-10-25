@@ -1,0 +1,10 @@
+^C:\USERS\SOTOJ\DOCUMENTS\CPP\PROJECTS\SNAKE2\BUILD\CMAKEFILES\EF0ABF0B6ABB5A76C057424A926C17C7\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/sotoj/Documents/Cpp/projects/snake2 -BC:/Users/sotoj/Documents/Cpp/projects/snake2/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/sotoj/Documents/Cpp/projects/snake2/build/snake.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
