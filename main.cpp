@@ -78,6 +78,8 @@ class Food {
 
 class Snake {
  public:
+  bool addSegment{false};
+
   deque<Vector2> body{Vector2{6, 9}, Vector2{5, 9}, Vector2{4, 9}};
   Vector2 direction{1, 0};
 
@@ -94,12 +96,25 @@ class Snake {
   }
 
   void update() {
+    if (this->addSegment) {
+      Vector2 tail = this->getTail();
+
+      this->body.push_back(Vector2{tail.x, tail.y});
+
+      this->addSegment = false;
+    }
+
     this->body.pop_back();
     this->body.push_front(Vector2Add(this->getHeadPos(), this->direction));
   }
 
   Vector2 getHeadPos() {
-    return this->body[0];
+    return this->body.front();
+  }
+
+ private:
+  Vector2 getTail() {
+    return this->body.back();
   }
 };
 
@@ -142,8 +157,7 @@ class Game {
     Vector2 foodPos = this->food.getFoodPos();
 
     if (Vector2Equals(headPos, foodPos)) {
-      cout << "Eating Food" << '\n';
-
+      this->snake.addSegment = true;
       this->food.setFoodPos(this->snake.body);
     }
   }
