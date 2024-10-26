@@ -7,14 +7,14 @@
 
 using std::cout, std::deque;
 
-const int SCREEN_WIDTH = 750;
-const int SCREEN_HEIGHT = 750;
+const int SCREEN_WIDTH{750};
+const int SCREEN_HEIGHT{750};
 
-const int CELL_SIZE = 30;
-const int CELL_COUNT = 25;
+const int CELL_SIZE{30};
+const int CELL_COUNT{25};
 
-const Color green = {173, 204, 96, 255};
-const Color darkGreen = {43, 51, 24, 255};
+const Color green{173, 204, 96, 255};
+const Color darkGreen{43, 51, 24, 255};
 
 class Food {
  public:
@@ -76,12 +76,15 @@ class Food {
   }
 };
 
+const deque<Vector2> DEFAULT_SNAKE_POSITION{Vector2{6, 9}, Vector2{5, 9}, Vector2{4, 9}};
+const Vector2 DEFAULT_SNAKE_DIRECTION{1, 0};
+
 class Snake {
  public:
   bool addSegment{false};
 
-  deque<Vector2> body{Vector2{6, 9}, Vector2{5, 9}, Vector2{4, 9}};
-  Vector2 direction{1, 0};
+  deque<Vector2> body = DEFAULT_SNAKE_POSITION;
+  Vector2 direction = DEFAULT_SNAKE_DIRECTION;
 
   void draw() {
     for (Vector2 bodyPos : this->body) {
@@ -98,7 +101,6 @@ class Snake {
   void update() {
     if (this->addSegment) {
       Vector2 tail = this->getTail();
-
       this->body.push_back(Vector2{tail.x, tail.y});
 
       this->addSegment = false;
@@ -106,6 +108,11 @@ class Snake {
 
     this->body.pop_back();
     this->body.push_front(Vector2Add(this->getHeadPos(), this->direction));
+  }
+
+  void reset() {
+    this->body = DEFAULT_SNAKE_POSITION;
+    this->direction = DEFAULT_SNAKE_DIRECTION;
   }
 
   Vector2 getHeadPos() {
@@ -130,7 +137,9 @@ class Game {
 
   void update() {
     this->snake.update();
+
     this->checkFoodCollision();
+    this->checkOutOfBounce();
   }
 
   void userKeyPressed() {
@@ -152,14 +161,34 @@ class Game {
   }
 
  private:
+  bool gameOver{false};
+
   void checkFoodCollision() {
     Vector2 headPos = this->snake.getHeadPos();
     Vector2 foodPos = this->food.getFoodPos();
 
     if (Vector2Equals(headPos, foodPos)) {
-      this->snake.addSegment = true;
       this->food.setFoodPos(this->snake.body);
+      this->snake.addSegment = true;
     }
+  }
+
+  void checkOutOfBounce() {
+    Vector2 headPos = this->snake.getHeadPos();
+    bool rowIsInbound = headPos.x < CELL_COUNT && headPos.x >= 0;
+    bool colIsInbound = headPos.y < CELL_COUNT && headPos.y >= 0;
+
+    if (rowIsInbound && colIsInbound) {
+      return;
+    }
+
+    this->GameOver();
+  }
+
+  void GameOver() {
+    cout << "Is out of BOUNCE!!" << '\n';
+    this->gameOver = true;
+    this->snake.reset();
   }
 };
 
