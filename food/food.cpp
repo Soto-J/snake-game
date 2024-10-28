@@ -6,11 +6,7 @@ Food::Food() : position(this->generateRandomCell()) {
   Image img = LoadImage("../graphics/food.png");
   this->texture = LoadTextureFromImage(img);
 
-  if (img.data == nullptr) {
-    std::cerr << "Failed to load image 'graphics/food.png'" << std::endl;
-  }
   UnloadImage(img);
-
 }
 
 void Food::draw() {
