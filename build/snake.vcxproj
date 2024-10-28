@@ -86,7 +86,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\sotoj\Documents\Cpp\projects\snake\build\_deps\raylib-src\src;C:\Users\sotoj\Documents\Cpp\projects\snake\build\_deps\raylib-src\src\external\glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\sotoj\Documents\Cpp\projects\snake;C:\Users\sotoj\Documents\Cpp\projects\snake\snake;C:\Users\sotoj\Documents\Cpp\projects\snake\food;C:\Users\sotoj\Documents\Cpp\projects\snake\build\_deps\raylib-src\src;C:\Users\sotoj\Documents\Cpp\projects\snake\build\_deps\raylib-src\src\external\glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -99,6 +99,7 @@
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <SupportJustMyCode></SupportJustMyCode>
+      <SuppressStartupBanner></SuppressStartupBanner>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;PLATFORM_DESKTOP;GRAPHICS_API_OPENGL_33;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
@@ -107,10 +108,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;PLATFORM_DESKTOP;GRAPHICS_API_OPENGL_33;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\sotoj\Documents\Cpp\projects\snake\build\_deps\raylib-src\src;C:\Users\sotoj\Documents\Cpp\projects\snake\build\_deps\raylib-src\src\external\glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\sotoj\Documents\Cpp\projects\snake;C:\Users\sotoj\Documents\Cpp\projects\snake\snake;C:\Users\sotoj\Documents\Cpp\projects\snake\food;C:\Users\sotoj\Documents\Cpp\projects\snake\build\_deps\raylib-src\src;C:\Users\sotoj\Documents\Cpp\projects\snake\build\_deps\raylib-src\src\external\glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\sotoj\Documents\Cpp\projects\snake\build\_deps\raylib-src\src;C:\Users\sotoj\Documents\Cpp\projects\snake\build\_deps\raylib-src\src\external\glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\sotoj\Documents\Cpp\projects\snake;C:\Users\sotoj\Documents\Cpp\projects\snake\snake;C:\Users\sotoj\Documents\Cpp\projects\snake\food;C:\Users\sotoj\Documents\Cpp\projects\snake\build\_deps\raylib-src\src;C:\Users\sotoj\Documents\Cpp\projects\snake\build\_deps\raylib-src\src\external\glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -133,7 +134,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\sotoj\Documents\Cpp\projects\snake\build\_deps\raylib-src\src;C:\Users\sotoj\Documents\Cpp\projects\snake\build\_deps\raylib-src\src\external\glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\sotoj\Documents\Cpp\projects\snake;C:\Users\sotoj\Documents\Cpp\projects\snake\snake;C:\Users\sotoj\Documents\Cpp\projects\snake\food;C:\Users\sotoj\Documents\Cpp\projects\snake\build\_deps\raylib-src\src;C:\Users\sotoj\Documents\Cpp\projects\snake\build\_deps\raylib-src\src\external\glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -145,6 +146,7 @@
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <SupportJustMyCode></SupportJustMyCode>
+      <SuppressStartupBanner></SuppressStartupBanner>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PLATFORM_DESKTOP;GRAPHICS_API_OPENGL_33;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
@@ -155,10 +157,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PLATFORM_DESKTOP;GRAPHICS_API_OPENGL_33;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\sotoj\Documents\Cpp\projects\snake\build\_deps\raylib-src\src;C:\Users\sotoj\Documents\Cpp\projects\snake\build\_deps\raylib-src\src\external\glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\sotoj\Documents\Cpp\projects\snake;C:\Users\sotoj\Documents\Cpp\projects\snake\snake;C:\Users\sotoj\Documents\Cpp\projects\snake\food;C:\Users\sotoj\Documents\Cpp\projects\snake\build\_deps\raylib-src\src;C:\Users\sotoj\Documents\Cpp\projects\snake\build\_deps\raylib-src\src\external\glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\sotoj\Documents\Cpp\projects\snake\build\_deps\raylib-src\src;C:\Users\sotoj\Documents\Cpp\projects\snake\build\_deps\raylib-src\src\external\glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\sotoj\Documents\Cpp\projects\snake;C:\Users\sotoj\Documents\Cpp\projects\snake\snake;C:\Users\sotoj\Documents\Cpp\projects\snake\food;C:\Users\sotoj\Documents\Cpp\projects\snake\build\_deps\raylib-src\src;C:\Users\sotoj\Documents\Cpp\projects\snake\build\_deps\raylib-src\src\external\glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -181,7 +183,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\sotoj\Documents\Cpp\projects\snake\build\_deps\raylib-src\src;C:\Users\sotoj\Documents\Cpp\projects\snake\build\_deps\raylib-src\src\external\glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\sotoj\Documents\Cpp\projects\snake;C:\Users\sotoj\Documents\Cpp\projects\snake\snake;C:\Users\sotoj\Documents\Cpp\projects\snake\food;C:\Users\sotoj\Documents\Cpp\projects\snake\build\_deps\raylib-src\src;C:\Users\sotoj\Documents\Cpp\projects\snake\build\_deps\raylib-src\src\external\glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -193,6 +195,7 @@
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <SupportJustMyCode></SupportJustMyCode>
+      <SuppressStartupBanner></SuppressStartupBanner>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PLATFORM_DESKTOP;GRAPHICS_API_OPENGL_33;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
@@ -203,10 +206,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PLATFORM_DESKTOP;GRAPHICS_API_OPENGL_33;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\sotoj\Documents\Cpp\projects\snake\build\_deps\raylib-src\src;C:\Users\sotoj\Documents\Cpp\projects\snake\build\_deps\raylib-src\src\external\glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\sotoj\Documents\Cpp\projects\snake;C:\Users\sotoj\Documents\Cpp\projects\snake\snake;C:\Users\sotoj\Documents\Cpp\projects\snake\food;C:\Users\sotoj\Documents\Cpp\projects\snake\build\_deps\raylib-src\src;C:\Users\sotoj\Documents\Cpp\projects\snake\build\_deps\raylib-src\src\external\glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\sotoj\Documents\Cpp\projects\snake\build\_deps\raylib-src\src;C:\Users\sotoj\Documents\Cpp\projects\snake\build\_deps\raylib-src\src\external\glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\sotoj\Documents\Cpp\projects\snake;C:\Users\sotoj\Documents\Cpp\projects\snake\snake;C:\Users\sotoj\Documents\Cpp\projects\snake\food;C:\Users\sotoj\Documents\Cpp\projects\snake\build\_deps\raylib-src\src;C:\Users\sotoj\Documents\Cpp\projects\snake\build\_deps\raylib-src\src\external\glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -229,7 +232,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\sotoj\Documents\Cpp\projects\snake\build\_deps\raylib-src\src;C:\Users\sotoj\Documents\Cpp\projects\snake\build\_deps\raylib-src\src\external\glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\sotoj\Documents\Cpp\projects\snake;C:\Users\sotoj\Documents\Cpp\projects\snake\snake;C:\Users\sotoj\Documents\Cpp\projects\snake\food;C:\Users\sotoj\Documents\Cpp\projects\snake\build\_deps\raylib-src\src;C:\Users\sotoj\Documents\Cpp\projects\snake\build\_deps\raylib-src\src\external\glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -242,6 +245,7 @@
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <SupportJustMyCode></SupportJustMyCode>
+      <SuppressStartupBanner></SuppressStartupBanner>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PLATFORM_DESKTOP;GRAPHICS_API_OPENGL_33;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
@@ -250,10 +254,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PLATFORM_DESKTOP;GRAPHICS_API_OPENGL_33;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\sotoj\Documents\Cpp\projects\snake\build\_deps\raylib-src\src;C:\Users\sotoj\Documents\Cpp\projects\snake\build\_deps\raylib-src\src\external\glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\sotoj\Documents\Cpp\projects\snake;C:\Users\sotoj\Documents\Cpp\projects\snake\snake;C:\Users\sotoj\Documents\Cpp\projects\snake\food;C:\Users\sotoj\Documents\Cpp\projects\snake\build\_deps\raylib-src\src;C:\Users\sotoj\Documents\Cpp\projects\snake\build\_deps\raylib-src\src\external\glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\sotoj\Documents\Cpp\projects\snake\build\_deps\raylib-src\src;C:\Users\sotoj\Documents\Cpp\projects\snake\build\_deps\raylib-src\src\external\glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\sotoj\Documents\Cpp\projects\snake;C:\Users\sotoj\Documents\Cpp\projects\snake\snake;C:\Users\sotoj\Documents\Cpp\projects\snake\food;C:\Users\sotoj\Documents\Cpp\projects\snake\build\_deps\raylib-src\src;C:\Users\sotoj\Documents\Cpp\projects\snake\build\_deps\raylib-src\src\external\glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -333,6 +337,9 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="C:\Users\sotoj\Documents\Cpp\projects\snake\main.cpp" />
+    <ClCompile Include="C:\Users\sotoj\Documents\Cpp\projects\snake\snake\snake.cpp" />
+    <ClCompile Include="C:\Users\sotoj\Documents\Cpp\projects\snake\food\food.cpp" />
+    <ClInclude Include="C:\Users\sotoj\Documents\Cpp\projects\snake\constants.hpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="C:\Users\sotoj\Documents\Cpp\projects\snake\build\ZERO_CHECK.vcxproj">
