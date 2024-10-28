@@ -2,8 +2,8 @@
 #include <iostream>
 #include <vector>
 
-#include "raylib.h"
-#include "raymath.h"
+#include <raylib.h>
+#include <raymath.h>
 
 using std::cout, std::deque;
 
@@ -139,6 +139,7 @@ class Game {
     this->snake.update();
 
     this->checkFoodCollision();
+    this->checkSelfCollision();
     this->checkOutOfBounce();
   }
 
@@ -183,6 +184,16 @@ class Game {
     }
 
     this->GameOver();
+  }
+
+  void checkSelfCollision() {
+    Vector2 headPos = this->snake.getHeadPos();
+
+    for (size_t i = 1; i < this->snake.body.size(); i++) {
+      if (Vector2Equals(this->snake.body[i], headPos)) {
+        this->GameOver();
+      }
+    }
   }
 
   void GameOver() {

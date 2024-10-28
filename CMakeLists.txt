@@ -1,14 +1,22 @@
 cmake_minimum_required(VERSION 3.5.0)
 project(snake VERSION 0.1.0 LANGUAGES C CXX)
 
+set(CMAKE_CXX_STANDARD 17)        # Use C++17
+set(CMAKE_CXX_STANDARD_REQUIRED ON)  # Enforce the standard
+set(CMAKE_CXX_EXTENSIONS OFF)     # Disable compiler-specific extensions
+
 include(CTest)
 enable_testing()
 
-add_executable(snake  main.cpp)
+include(FetchContent)
+FetchContent_Declare(
+  raylib
+  GIT_REPOSITORY https://github.com/raysan5/raylib.git
+  GIT_TAG 4.5.0
+)
 
-set_property(TARGET snake PROPERTY CXX_STANDARD 17)
+FetchContent_MakeAvailable(raylib)
 
-# 1. Create CMakeLists.txt
-# 2. Create CMakePresets.json
-# 3. cmake --preset default
-# 4. cmake --build --preset default
+add_executable(snake main.cpp)
+
+target_link_libraries(snake PRIVATE raylib)

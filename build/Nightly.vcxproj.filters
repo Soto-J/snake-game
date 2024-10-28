@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="C:\Users\sotoj\Documents\Cpp\projects\snake2\build\CMakeFiles\ef0abf0b6abb5a76c057424a926c17c7\Nightly.rule">
+    <CustomBuild Include="C:\Users\sotoj\Documents\Cpp\projects\snake\build\CMakeFiles\e9ec0f6eb760d2df85f9f9a2ba36fab8\Nightly.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\Users\sotoj\Documents\Cpp\projects\snake2\CMakeLists.txt" />
+    <CustomBuild Include="C:\Users\sotoj\Documents\Cpp\projects\snake\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="C:\Users\sotoj\Documents\Cpp\projects\snake2\build\CMakeFiles\Nightly" />
+    <None Include="C:\Users\sotoj\Documents\Cpp\projects\snake\build\CMakeFiles\Nightly" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CMake Rules">
-      <UniqueIdentifier>{A2DB1E51-798A-3513-9992-BC8A2CABE23D}</UniqueIdentifier>
+      <UniqueIdentifier>{78FA6642-BA6D-38CF-BF43-8C8679915A81}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
