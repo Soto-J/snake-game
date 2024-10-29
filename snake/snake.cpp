@@ -2,6 +2,7 @@
 
 #include "constants.hpp"
 
+// PUBLIC
 void Snake::draw() {
   for (Vector2 body : this->snakeBody) {
     Rectangle rectangle = {
@@ -36,6 +37,7 @@ Vector2 Snake::getHeadPos() {
   return this->snakeBody.front();
 };
 
+// PRIVATE
 Vector2 Snake::getTail() {
   return this->snakeBody.back();
 }

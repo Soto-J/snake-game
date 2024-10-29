@@ -2,6 +2,7 @@
 
 #include <iostream>
 
+// PUBLIC
 Food::Food() : position(this->generateRandomCell()) {
   Image img = LoadImage("../graphics/food.png");
   this->texture = LoadTextureFromImage(img);
@@ -25,10 +26,15 @@ void Food::setFoodPos(deque<Vector2> snakeBody) {
   this->position = this->generateRandomPosition(snakeBody);
 };
 
+void Food::reset(deque<Vector2> snakeBody) {
+  this->setFoodPos(snakeBody);
+};
+
 Food::~Food() {
   UnloadTexture(this->texture);
 };
 
+// PRIVATE 
 Vector2 Food::generateRandomCell() {
   float randomX = float(GetRandomValue(0, CELL_COUNT - 1));
   float randomY = float(GetRandomValue(0, CELL_COUNT - 1));

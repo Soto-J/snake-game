@@ -15,6 +15,7 @@ class Food {
   void draw();
   Vector2 getFoodPos();
   void setFoodPos(deque<Vector2> snakeBody);
+  void reset(deque<Vector2> snakeBody);
   ~Food();
 
  private:
