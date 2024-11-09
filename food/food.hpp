@@ -19,8 +19,8 @@ class Food {
   ~Food();
 
  private:
-  Vector2 position;
-  Texture2D texture;
+  Vector2 _position;
+  Texture2D _texture;
 
   Vector2 generateRandomCell();
   Vector2 generateRandomPosition(const deque<Vector2>& snakeBody);

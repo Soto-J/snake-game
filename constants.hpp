@@ -18,7 +18,8 @@ const Color green{173, 204, 96, 255};
 const std::deque<Vector2> DEFAULT_SNAKE_POSITION{
     Vector2{6, 9},
     Vector2{5, 9},
-    Vector2{4, 9}};
+    Vector2{4, 9},
+};
 
 const Vector2 DEFAULT_SNAKE_DIRECTION{1, 0};
 
