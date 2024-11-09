@@ -24,4 +24,4 @@ class Snake {
   Vector2 getTail();
 };
 
-#endif  // SNAKE_HPP
+#endif 
